@@ -53,7 +53,7 @@ ss() {
 
 # If you're working with android emulator, then use rec and get
 # Firstly, execute rec, it will immediately start recording and kill the process (control + c)
-# Then execute get, it will automatically gets the recorded video, converts it to a gif file and saves it to Desktop
+# Then execute get, it will automatically get the recorded video, converts it to a gif file and saves it to Desktop
 # Converting videos to gif requires ffmpeg dependency, install it with `brew install ffmpeg`
 alias rec="adb shell screenrecord /sdcard/video.mp4"
 get() {
@@ -71,7 +71,8 @@ get() {
 
 # If you're working with real device via scrcpy, then use rec2 and get2
 # Firstly, execute rec2, it will immediately start recording and kill the process (control + c)
-# Then execute get2, it will automatically gets the recorded video, converts it to a gif file and saves it to Desktop
+# Then execute get2, it will automatically get the recorded video, converts it to a gif file and saves it to Desktop
+# Install scrcpy with `brew install scrcpy`
 # Converting videos to gif requires ffmpeg dependency, install it with `brew install ffmpeg`
 alias rec2="scrcpy --record video.mp4"
 get2() {
